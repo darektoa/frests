@@ -1,0 +1,19 @@
+skip-elmnt a{
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: .5rem;
+    background-color: #d75eff;
+    z-index: 1000;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 0;
+    background-color: #d75eff;
+}
+
+skip-elmnt a:focus{
+    z-index: 1000;
+}

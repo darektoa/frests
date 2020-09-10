@@ -1,0 +1,51 @@
+@font-face{
+    src: url('/fonts/eras-bold.woff') format('woff');
+    src: url('/fonts/eras-bold.ttf') format('truetype');
+    font-family: 'Eras ITC';
+}
+
+@font-face{
+    src: url('/fonts/eras-medium.woff') format('woff');
+    src: url('/fonts/eras-medium.ttf') format('truetype');
+    font-family: 'Eras ITC Medium';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Eras ITC Medium', 'Eras Medium ITC', 'Eras ITC Light', 'Eras Light ITC',sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #dcdcdc #f1f1f1;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
+}::-webkit-scrollbar{
+    width: 6px;
+    background-color: #f1f1f1;
+}::-webkit-scrollbar-thumb{
+    background-color: #dcdcdc;
+}
+
+html{
+    font-size: 10px;
+}
+
+main{
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 1366px;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .container{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}

@@ -1,0 +1,123 @@
+header-elmnt{
+    width: 100%;
+    height: 7rem;
+    box-sizing: content-box;
+    padding-top: 2rem;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 2px solid #d75eff; */ 
+    /* background-color: #000; */
+    transition: top .5s, padding-top .5s, background-color .5s;
+    z-index: 100;
+}
+
+header-elmnt .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header-elmnt h1{
+    font-family: 'Eras ITC';
+    font-size: 3rem;
+    color: #fff;
+}
+
+header-elmnt nav{
+    display: flex;
+    align-items: center;
+}
+
+header-elmnt nav,
+header-elmnt nav ul{
+    height: 100%;
+}
+
+header-elmnt nav button{
+    display: none;
+}
+
+header-elmnt nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header-elmnt nav ul li{
+    list-style: none;
+}
+
+header-elmnt nav ul li a{
+    padding: 2.6rem;
+    display: block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+header-elmnt nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-onscroll{
+    padding-top: 0;
+    border-bottom: 2px solid #000;
+    background-color: #000;
+}
+
+.header-hidden{
+    top: -10rem;
+}
+
+.current-page{
+    color: #d75eff;
+    border-bottom: 2px solid #d75eff;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 900px){
+    header-elmnt h1{
+        font-size: 2.5rem;
+    }
+
+    header-elmnt nav button{
+        padding: 1rem;
+        display: flex;
+    }
+    
+    header-elmnt nav ul{
+        width: 80vw;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 9rem;
+        right: -80vw;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #000;
+        overflow: auto;
+        transition: .5s, top 0s;
+    }
+
+    header-elmnt nav ul li{
+        width: 100%;
+    }
+
+    .header-onscroll{
+        border-bottom: 2px solid #d75eff;
+    }
+
+    .nav-show{
+        right: 0;
+    }
+
+    .current-page{
+        border: none;
+        border-left: 5px solid #d75eff;
+    }
+}

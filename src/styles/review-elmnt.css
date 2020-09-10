@@ -1,0 +1,58 @@
+review-elmnt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+review-elmnt .photo{
+    width: 10rem;
+    height: 10rem;
+    margin: 4rem;
+    border-radius: 50%;
+    border: 5px solid #b6b6b6;
+    object-fit: cover;
+    box-sizing: content-box;
+}
+
+review-elmnt section{
+    width: 100%;
+    padding: 0 2rem;
+    border-left: 2px solid #b6b6b6;
+}
+
+review-elmnt section h3{
+    font-size: 2rem;
+}
+
+review-elmnt section p{
+    font-size: 1.6rem;
+}
+
+review-elmnt section p:last-child{
+    margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 500px){
+    review-elmnt{
+        max-width: 32rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    review-elmnt section{
+        width: 80%;
+        padding: 2rem 0;
+        border: none;
+        border-top: 2px solid #b6b6b6;
+    }
+    
+    review-elmnt section h3,
+    review-elmnt section p{
+        text-align: center;
+    }
+
+}

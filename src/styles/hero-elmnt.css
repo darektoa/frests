@@ -1,0 +1,68 @@
+hero-elmnt{
+    width: 100%;
+    height: 70rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hero-elmnt .filter{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 5;
+}
+
+hero-elmnt img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 4;
+}
+
+hero-elmnt .text-box{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+hero-elmnt .text-box h1{
+    font-family: "Eras ITC"; 
+    font-size: 10rem;
+}
+
+hero-elmnt .text-box p{
+    font-size: 5rem;
+}
+
+
+
+@media screen and (max-width: 900px){
+    hero-elmnt{
+        height: 50rem;
+    }
+
+    hero-elmnt .text-box h1{
+        font-size: 5rem;
+    }
+
+    hero-elmnt .text-box p{
+        font-size: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 400px){
+    hero-elmnt .text-box h1{
+        font-size: 4rem;
+    }
+
+    hero-elmnt .text-box p{
+        font-size: 2.5rem;
+    }
+}

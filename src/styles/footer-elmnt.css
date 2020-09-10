@@ -1,0 +1,59 @@
+footer-elmnt{
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid #d75eff;
+    background-color: #000;
+    color: #fff;
+}
+
+footer-elmnt > .container{
+    display: flex;
+    align-items: center;
+}
+
+footer-elmnt img{
+    width: 20rem;
+}
+
+footer-elmnt section{
+    width: 100%;
+    padding: 0 2rem;
+}
+
+footer-elmnt section h2{
+    font-size: 5rem;
+    font-family: "Eras ITC";
+}
+
+footer-elmnt section p{
+    font-size: 2rem;
+}
+
+
+
+@media screen and (max-width: 500px){
+    footer-elmnt{
+        font-size: 1.6rem;
+    }
+
+    footer-elmnt > .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer-elmnt img{
+        width: 10rem;
+    }
+    
+    footer-elmnt section h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    footer-elmnt section p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
