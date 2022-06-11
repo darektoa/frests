@@ -14,7 +14,7 @@ class HeaderElmnt extends HTMLElement{
                     <ul>
                         <li><a href="#" class="current-page">Home</a></li>
                         <li><a href="#">Favorite</a></li>
-                        <li><a href="https://instagram.com/abdul_fattah_h" target="_blank">About Us</a></li>
+                        <li><a href="https://instagram.com/" target="_blank">About Us</a></li>
                     </ul>
                 </nav>
             </div>

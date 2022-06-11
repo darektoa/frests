@@ -9,7 +9,7 @@ class FooterElmnt extends HTMLElement{
                 <img src="./images/icons/icon-frests.svg" alt="Icon Frests">
                 <section class="container">
                     <h2>Frests</h2>
-                    <p>Copyright &copy 2020 Frests - Abdul Fattah</p>
+                    <p>Copyright &copy 2020 Frests - Abdul</p>
                 </section>
             </div>
         `;
